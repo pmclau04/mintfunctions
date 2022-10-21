@@ -1,0 +1,108 @@
+Transfer:Transfer
+Service & Parts:Auto & Transport
+Income: Reimbursement
+Fast Food:Restaurants
+Pet Food & Supplies:Pets
+Coffee Shops:Restaurants
+Travel:Travel
+Alcohol & Bars:Alcohol & Bars
+Restaurants:Restaurants
+Paycheck:Income
+Mortgage & Rent:Mortgage & Rent
+Gas & Fuel:Auto & Transport
+Shopping:Shopping
+Groceries:Groceries
+Gift:Gifts
+Bills & Utilities:Bills & Utilities
+Clothing:Shopping
+Air Travel:Travel
+Movies & DVDs:Entertainment
+Hair:Personal Care
+ATM Fee:Taxes & Fees
+Cash & ATM:Withdrawls
+Fees & Charges:Taxes & Fees
+Gym:Personal Care
+Rental Car & Taxi:Travel
+Mobile Phone:Bills & Utilities
+Food & Dining:Restaurants
+Sporting Goods:Shopping
+Interest Income:Income
+Bank Fee:Taxes & Fees
+Auto Insurance:Auto & Transport
+Business Services:Withdrawls
+Credit Card Payment:Credit Card Payment
+Home Improvement:Home Improvement
+Amusement:Entertainment
+Television:Entertainment
+Books:Entertainment
+Parking:Auto & Transport
+Arts:Entertainment
+Public Transportation:Auto & Transport
+Hotel:Travel
+Home:Home Improvement
+Loan Payment:Loans
+Veterinary:Pets
+Entertainment:Entertainment
+Doctor:Medical
+Pharmacy:Medical
+Auto & Transport:Auto & Transport
+Student Loan:Loans
+Service Fee:Taxes & Fees
+Newspapers & Magazines:Entertainment
+Uncategorized:Misc
+Furnishings:Shopping
+Transfer for Cash Spending:Misc
+Lawn & Garden:Home Improvement
+Financial:Misc
+Personal Care:Personal Care
+Health & Fitness:Personal Care
+Gifts & Donations:Gifts
+Mortgage & Rent Transfer:Transfer
+Printing:Misc
+Legal:Misc
+Federal Tax:Taxes & Fees
+Electronics & Software:Entertainment 
+Shipping:Misc
+Utilities:Bills & Utilities
+Eyecare:Medical
+Trade Commissions:Reimbursement
+Hobbies:Entertainment
+Home Insurance:Mortgage & Rent
+Reimbursement:Reimbursement
+Sports:Entertainment
+Pets:Pets
+Education:Misc
+Late Fee:Taxes & Fees
+Internet:Bills & Utilities
+Tuition:Bills & Utilities
+Music:Entertainment
+Kids Activities:Entertainment
+Health Insurance:Medical
+Home Services:Home Improvement
+Tolls:Auto & Transport
+Spa & Massage:Personal Care 
+Wedding:Transfer
+Makeup:Personal Care
+Boarding:Pets
+Charity:Gifts
+Vacation:Travel
+Check:Misc
+Dividend & Cap Gains:Transfer
+Taxes:Taxes & Fees
+Investments:Transfer
+Finance Charge:Taxes & Fees
+Dentist:Medical
+Rental Income:Misc
+Advertising:Misc
+Ride Share:Auto & Transport
+Daycare:Pets
+Laundry:Personal Care
+Hide from Budgets & Trends:Transfer
+State Tax:Mortgage & Rent
+Property Tax:Mortgage & Rent
+Baby Supplies:Transfer
+Life Insurance:Transfer
+Misc Expenses:Misc
+Deposit:Transfer
+Loan Payment:Loans
+Food Delivery:Restaurants
