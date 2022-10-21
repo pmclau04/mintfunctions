@@ -90,13 +90,48 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- GETTING STARTED -->
-## Getting Started
+<!-- Use -->
+## Use
+This set of functions makes postprocessing Mint personal finance data easy, and generates monthly reports for your spending.  
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+### Load Mint Transactions data as a dataFrame
+First, download your spending data from [mint](mint.com).  Then, load the transaction data as a a dataframe and run 'process_mintcsv' to prep the dataframe for report generation.  For example:
+'''python
+#Load historical data
+df = pd.read_csv(r'./data/transactions.csv',index_col='Date',encoding='latin-1',infer_datetime_format=True)
+df.index = pd.to_datetime(df.index)
+df = mintfunctions.process_mintcsv(df)
+'''
 
-### Prerequisites
+### Generate report
+Once the transaction data is pre-processed, you can run the 'mintfunctions.gerate_pdf' function to visualize your spending data and create a monthly report.  Required and optional inputs are as follows:
+
+**Required**
+df = dataframe of spending and income data
+**Optional**
+-  pdfdir = string, path to save monthly report pdf.  Default = '', 
+- figdir = string, path to save figures.  Default = r'./figures',
+- yearly_exclude_category = string, optional input that excludes a single category from your yearly spending amounts.  For example, user can specify 'Home Improvement' to exclude all home improvment expenses from plot.  Default = None
+- spending_drop_categories = list of strings, overall categories to exclude from spending dataframe.  Default = ['Income', 'Transfer','Reimbursement','Credit Card Payment','Loans']
+
+Example python input to generate report:
+'''python
+mintfunctions.generate_pdf(df,
+             pdfdir = '', 
+             figdir = r'./figures',
+             yearly_exclude_category = None, 
+             spending_drop_categories = ['Income', 'Transfer','Reimbursement','Credit Card Payment','Loans'])
+'''
+##Output
+Code will output monthly report pdf, the following figures are an example of the yearly spending breakdown, and the categorical spending breakdown.  Example figures below for each, taken from dummy monthly report.
+
+**Example Categorical plots generated in pdf**
+![image](https://user-images.githubusercontent.com/27655508/197305919-a2a412e4-8a68-47d4-b1c4-1883c50cec85.png)
+
+**Example Yearly & Monthly spending breakdown plots**
+![image](https://user-images.githubusercontent.com/27655508/197305934-be8842c6-f821-42e6-bd60-68a13d9e04e3.png)
+
+## Prerequisites to run mintfunctions
 These are the required packages for using mintfunctions. 
 * seaborn
 * matplotlib
@@ -113,18 +148,6 @@ These are the required packages for using mintfunctions.
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- How to Use Mintfunctions -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- LICENSE -->
 ## License
